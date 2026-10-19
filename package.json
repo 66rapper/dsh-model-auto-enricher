@@ -1,0 +1,64 @@
+{
+  "name": "dsh-model-auto-enricher",
+  "version": "2.0.0",
+  "description": "DSH 模型补齐助手：一键为全部模型渠道智能补齐百万长上下文、多模态输入（发图）与深度思考档位（reasoningEfforts），写入前自动时间戳备份，严格幂等。Model channel auto-enricher for DeepSeek Harness — restores 1M context windows, image input and reasoning effort tiers on every configured model, with a timestamped backup before any write.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/66rapper/dsh-model-auto-enricher.git"
+  },
+  "homepage": "https://github.com/66rapper/dsh-model-auto-enricher#readme",
+  "bugs": {
+    "url": "https://github.com/66rapper/dsh-model-auto-enricher/issues"
+  },
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/core.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "model-enricher",
+    "context-window",
+    "multimodal",
+    "reasoning-efforts",
+    "模型补齐",
+    "上下文",
+    "多模态",
+    "思考档位"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}

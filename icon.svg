@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="模型补齐助手">
+  <title>模型补齐助手 / Model Auto Enricher</title>
+  <defs>
+    <linearGradient id="dmaeCrystal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C5CFF"/>
+      <stop offset="52%" stop-color="#4C8DFF"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="dmaeEdge" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="dmaeBolt" x1="0.2" y1="0" x2="0.85" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#FFF4CF"/>
+      <stop offset="100%" stop-color="#FFD86B"/>
+    </linearGradient>
+  </defs>
+  <!-- 晶体外壳：象征「补全后的完整模型规格」 -->
+  <path d="M24 3.2 40.8 13.6v20.8L24 44.8 7.2 34.4V13.6z"
+        fill="url(#dmaeCrystal)" fill-opacity="0.16"
+        stroke="url(#dmaeEdge)" stroke-width="2" stroke-linejoin="round"/>
+  <!-- 内部棱面 -->
+  <path d="M24 3.2v41.6M7.2 13.6 40.8 34.4M40.8 13.6 7.2 34.4"
+        stroke="url(#dmaeEdge)" stroke-width="0.9" stroke-opacity="0.42" fill="none"/>
+  <!-- 闪电：象征「一键即时补齐」 -->
+  <path d="M26.9 11.4 15.2 26.9h6.9L19.5 36.9 32.8 20.6h-7.3z"
+        fill="url(#dmaeBolt)" stroke="#FFFFFF" stroke-opacity="0.4"
+        stroke-width="0.8" stroke-linejoin="round"/>
+</svg>
