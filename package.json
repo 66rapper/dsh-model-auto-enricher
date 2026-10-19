@@ -1,7 +1,7 @@
 {
   "name": "dsh-model-auto-enricher",
   "version": "2.0.0",
-  "description": "DSH 模型补齐助手：一键为全部模型渠道智能补齐百万长上下文、多模态输入（发图）与深度思考档位（reasoningEfforts），写入前自动时间戳备份，严格幂等。Model channel auto-enricher for DeepSeek Harness — restores 1M context windows, image input and reasoning effort tiers on every configured model, with a timestamped backup before any write.",
+  "description": "DSH 模型补齐助手：彻底解决在 DSH 添加新模型渠道后，还要把几十个模型一个个手动点开调上下文、勾多模态发图、配思考强度档位（low/high/max）的繁琐痛点；支持新加模型保存即自动补齐与一键批量补齐，写前自动时间戳备份。Model channel auto-enricher for DeepSeek Harness — eliminates manually configuring context windows, image input and reasoning effort tiers model by model.",
   "license": "MIT",
   "repository": {
     "type": "git",
